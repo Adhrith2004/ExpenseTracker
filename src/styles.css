@@ -1,0 +1,24 @@
+:root{ --bg:#f7f7fb; --card:#ffffff; --muted:#666; --accent:#6b5ce7 }
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif}
+body{margin:0;background:var(--bg);color:#111}
+.container{max-width:720px;margin:28px auto;padding:20px}
+h1{text-align:center;margin-bottom:18px}
+.balance-card{display:flex;justify-content:space-between;align-items:center;background:var(--card);padding:16px;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,0.06)}
+.big{font-size:28px;margin:6px 0}
+.small-cards{display:flex;gap:10px;align-items:center}
+.card{padding:8px 12px;background:#fafaff;border-radius:8px}
+.add-form{background:var(--card);padding:14px;margin-top:14px;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,0.04)}
+.add-form input{display:block;width:100%;padding:8px;margin:8px 0;border-radius:6px;border:1px solid #e6e6f0}
+.add-form .type-row{display:flex;gap:12px;align-items:center;margin-bottom:8px}
+.add-form button{padding:8px 12px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer}
+.list{background:var(--card);padding:12px;margin-top:14px;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,0.04)}
+ul{list-style:none;padding:0;margin:0}
+.tx{display:flex;justify-content:space-between;align-items:center;padding:10px 8px;border-bottom:1px solid #f0f0f6}
+.tx:last-child{border-bottom:none}
+.tx.income .amount-row span{color:green}
+.tx.expense .amount-row span{color:red}
+.amount-row{display:flex;gap:10px;align-items:center}
+.del{background:transparent;border:none;color:#999;cursor:pointer}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+.footer{text-align:center;margin-top:14px;color:#777;font-size:13px}
